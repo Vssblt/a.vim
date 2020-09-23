@@ -1,3 +1,7 @@
+## Fork by vim-scripts/a.vim
+#### This fork disabled <Leader> key mapping in insert mode.
+
+
 This is a mirror of http://www.vim.org/scripts/script.php?script_id=31
 
 A few of quick commands to swtich between source files and header files quickly.
