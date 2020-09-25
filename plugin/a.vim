@@ -632,6 +632,7 @@ endfunction
 comm! -nargs=? -bang A call AlternateFile("n<bang>", <f-args>)
 comm! -nargs=? -bang AS call AlternateFile("h<bang>", <f-args>)
 comm! -nargs=? -bang AV call AlternateFile("v<bang>", <f-args>)
+comm! -nargs=? -bang AR call AlternateFile("r<bang>", <f-args>)
 comm! -nargs=? -bang AT call AlternateFile("t<bang>", <f-args>)
 comm! -nargs=? -bang AN call NextAlternate("<bang>")
 
@@ -745,6 +746,8 @@ function! <SID>FindOrCreateBuffer(fileName, doSplit, findSimilar)
         silent! execute ":split".bang." " . FILENAME
      elseif (splitType == "v")
         silent! execute ":vsplit".bang." " . FILENAME
+     elseif (splitType == "r")
+        silent! execute ":rightbelow vsplit".bang." " . FILENAME
      elseif (splitType == "t")
         silent! execute ":tab split".bang." " . FILENAME
      else
