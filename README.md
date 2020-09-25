@@ -1,6 +1,12 @@
 ## Fork by vim-scripts/a.vim
 #### This fork disabled \<Leader\> key mapping in insert mode.
 
+#### orther change: ####
+
+Add:  
+
+:AR open file in right below vsplit
+
 ## Original readme：
 This is a mirror of http://www.vim.org/scripts/script.php?script_id=31  
 
