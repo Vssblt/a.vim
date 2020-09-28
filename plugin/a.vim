@@ -811,6 +811,8 @@ function! <SID>FindOrCreateBuffer(fileName, doSplit, findSimilar)
               silent! execute ":split".bang." " . FILENAME
            elseif (splitType == "v")
               silent! execute ":vsplit".bang." " . FILENAME
+           elseif (splitType == "r")
+              silent! execute ":rightbelow vsplit".bang." " . FILENAME
            elseif (splitType == "t")
               silent! execute ":tab split".bang." " . FILENAME
            else
