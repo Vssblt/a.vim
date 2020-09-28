@@ -1,4 +1,4 @@
-## Fork by vim-scripts/a.vim
+## Forked from vim-scripts/a.vim
 #### This fork disabled \<Leader\> key mapping in insert mode.
 
 #### orther change: ####
