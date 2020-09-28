@@ -795,6 +795,8 @@ function! <SID>FindOrCreateBuffer(fileName, doSplit, findSimilar)
            silent! execute ":vert sbuffer " . FILENAME
         elseif (splitType == "t")
            silent! execute ":tab sbuffer " . FILENAME
+        elseif (splitType == "r")
+           silent! execute ":rightbelow vsplit". FILENAME
         else
            silent! execute ":buffer".bang." " . FILENAME
         endif
