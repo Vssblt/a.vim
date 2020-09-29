@@ -5,7 +5,7 @@
 
 Add:  
 
-:AR open file in right below vsplit
+:AR open file in right below vsplit window.
 
 ## Original readme：
 This is a mirror of http://www.vim.org/scripts/script.php?script_id=31  
